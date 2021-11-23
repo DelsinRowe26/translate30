@@ -16,7 +16,7 @@ namespace translate
         int index;
         string input;
         string languagePair;
-        Translate GoogleAPI;
+        //Translate GoogleAPI;
         public Form1()
         {
             InitializeComponent();
@@ -45,7 +45,7 @@ namespace translate
             string fileText = System.IO.File.ReadAllText(filename);
             tBtRaNs.Text = fileText;
             MessageBox.Show("Файл открыт");
-            string url = String.Format("https://translate.google.com/?hl=ru&sl=auto&tl=ru&text= &op=translate", input, languagePair);
+            string url = String.Format("https://translate.google.com/?hl=ru&sl=auto&tl=ru&text=&op=translate", input, languagePair);
         }
 
         private void сохранитьToolStripMenuItem_Click(object sender, EventArgs e)
@@ -62,6 +62,11 @@ namespace translate
         private void выходToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void tBtRaNs_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
