@@ -4,9 +4,11 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 using Newtonsoft.Json;
 
 namespace translate
@@ -45,7 +47,6 @@ namespace translate
             string fileText = System.IO.File.ReadAllText(filename);
             tBtRaNs.Text = fileText;
             MessageBox.Show("Файл открыт");
-            string url = String.Format("https://translate.google.com/?hl=ru&sl=auto&tl=ru&text=&op=translate", input, languagePair);
         }
 
         private void сохранитьToolStripMenuItem_Click(object sender, EventArgs e)
@@ -55,7 +56,7 @@ namespace translate
             // получаем выбранный файл
             string filename = saveFileDialog1.FileName;
             // сохраняем текст в файл
-            System.IO.File.WriteAllText(filename, tBtRaNs.Text);
+            System.IO.File.WriteAllText(filename, tBtRan.Text);
             MessageBox.Show("Файл сохранен");
         }
 
@@ -67,6 +68,15 @@ namespace translate
         private void tBtRaNs_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void tRaNsLaToR_Click(object sender, EventArgs e)
+        {
+            string url = "https://translate.google.com/?hl=ru&sl=auto&tl=ru&text=&op=translate";
+            url = "https://translate.google.com/?hl=ru&sl=auto&tl=ru&text=" + tBtRaNs.Text + "&op=translate";
+            WebRequest request = WebRequest.Create(url);
+            WebResponse response = await request.GetResponseAsync();
+            tBtRan.Text = url;
         }
     }
 }
