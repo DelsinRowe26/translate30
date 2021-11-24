@@ -78,6 +78,7 @@ namespace translate
             WebRequest request = WebRequest.Create(url);
             WebResponse response = request.GetResponse();
             Stream resStream = response.GetResponseStream();
+            
             using (Stream stream = response.GetResponseStream())
             {
                 using (StreamReader reader = new StreamReader(stream))
@@ -87,6 +88,11 @@ namespace translate
             }
             response.Close();
             //tBtRan.Text = url;
+        }
+
+        private void tBtRan_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

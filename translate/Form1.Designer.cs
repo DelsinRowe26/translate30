@@ -51,7 +51,8 @@ namespace translate
             this.файлToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1347, 30);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1010, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -63,14 +64,14 @@ namespace translate
             this.toolStripMenuItem2,
             this.выходToolStripMenuItem});
             this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
-            this.файлToolStripMenuItem.Size = new System.Drawing.Size(59, 26);
+            this.файлToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
             this.файлToolStripMenuItem.Text = "Файл";
             // 
             // открытьToolStripMenuItem
             // 
             this.открытьToolStripMenuItem.Name = "открытьToolStripMenuItem";
             this.открытьToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.открытьToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.открытьToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.открытьToolStripMenuItem.Text = "Открыть";
             this.открытьToolStripMenuItem.Click += new System.EventHandler(this.открытьToolStripMenuItem_Click);
             // 
@@ -78,31 +79,30 @@ namespace translate
             // 
             this.сохранитьToolStripMenuItem.Name = "сохранитьToolStripMenuItem";
             this.сохранитьToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.сохранитьToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.сохранитьToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.сохранитьToolStripMenuItem.Text = "Сохранить";
             this.сохранитьToolStripMenuItem.Click += new System.EventHandler(this.сохранитьToolStripMenuItem_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(213, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(170, 6);
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // выходToolStripMenuItem
             // 
             this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
             this.выходToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-            this.выходToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.выходToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.выходToolStripMenuItem.Text = "Выход";
             this.выходToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
             // 
             // tBtRaNs
             // 
-            this.tBtRaNs.Location = new System.Drawing.Point(17, 34);
-            this.tBtRaNs.Margin = new System.Windows.Forms.Padding(4);
+            this.tBtRaNs.Location = new System.Drawing.Point(13, 28);
             this.tBtRaNs.Multiline = true;
             this.tBtRaNs.Name = "tBtRaNs";
-            this.tBtRaNs.Size = new System.Drawing.Size(433, 504);
+            this.tBtRaNs.Size = new System.Drawing.Size(326, 410);
             this.tBtRaNs.TabIndex = 1;
             this.tBtRaNs.TextChanged += new System.EventHandler(this.tBtRaNs_TextChanged);
             // 
@@ -223,26 +223,28 @@ namespace translate
             "Южный сото",
             "Яванский",
             "Японский"});
-            this.translatebox.Location = new System.Drawing.Point(1083, 34);
-            this.translatebox.Margin = new System.Windows.Forms.Padding(4);
+            this.translatebox.Location = new System.Drawing.Point(812, 28);
             this.translatebox.Name = "translatebox";
-            this.translatebox.Size = new System.Drawing.Size(251, 24);
+            this.translatebox.Size = new System.Drawing.Size(189, 21);
             this.translatebox.TabIndex = 2;
             this.translatebox.TextChanged += new System.EventHandler(this.translatebox_TextChanged_1);
             // 
             // tBtRan
             // 
-            this.tBtRan.Location = new System.Drawing.Point(614, 34);
+            this.tBtRan.Location = new System.Drawing.Point(460, 28);
+            this.tBtRan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tBtRan.Multiline = true;
             this.tBtRan.Name = "tBtRan";
-            this.tBtRan.Size = new System.Drawing.Size(462, 504);
+            this.tBtRan.Size = new System.Drawing.Size(348, 410);
             this.tBtRan.TabIndex = 3;
+            this.tBtRan.TextChanged += new System.EventHandler(this.tBtRan_TextChanged);
             // 
             // tRaNsLaToR
             // 
-            this.tRaNsLaToR.Location = new System.Drawing.Point(457, 217);
+            this.tRaNsLaToR.Location = new System.Drawing.Point(343, 176);
+            this.tRaNsLaToR.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tRaNsLaToR.Name = "tRaNsLaToR";
-            this.tRaNsLaToR.Size = new System.Drawing.Size(151, 57);
+            this.tRaNsLaToR.Size = new System.Drawing.Size(113, 46);
             this.tRaNsLaToR.TabIndex = 4;
             this.tRaNsLaToR.Text = "Перевести";
             this.tRaNsLaToR.UseVisualStyleBackColor = true;
@@ -250,16 +252,15 @@ namespace translate
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1347, 554);
+            this.ClientSize = new System.Drawing.Size(1010, 450);
             this.Controls.Add(this.tRaNsLaToR);
             this.Controls.Add(this.tBtRan);
             this.Controls.Add(this.translatebox);
             this.Controls.Add(this.tBtRaNs);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.menuStrip1.ResumeLayout(false);
