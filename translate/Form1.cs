@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Net;
+using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -75,8 +76,17 @@ namespace translate
             string url = "https://translate.google.com/?hl=ru&sl=auto&tl=ru&text=&op=translate";
             url = "https://translate.google.com/?hl=ru&sl=auto&tl=ru&text=" + tBtRaNs.Text + "&op=translate";
             WebRequest request = WebRequest.Create(url);
-            WebResponse response = await request.GetResponseAsync();
-            tBtRan.Text = url;
+            WebResponse response = request.GetResponse();
+            Stream resStream = response.GetResponseStream();
+            using (Stream stream = response.GetResponseStream())
+            {
+                using (StreamReader reader = new StreamReader(stream))
+                {
+                    tBtRan.Text = reader.ReadToEnd();
+                }
+            }
+            response.Close();
+            //tBtRan.Text = url;
         }
     }
 }
