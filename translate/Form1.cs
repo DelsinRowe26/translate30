@@ -9,6 +9,7 @@ using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GoogleTranslateLib;
 
 using Newtonsoft.Json;
 
@@ -17,8 +18,6 @@ namespace translate
     public partial class Form1 : Form
     {
         int index;
-        string input;
-        string languagePair;
         //Translate GoogleAPI;
         public Form1()
         {
@@ -71,22 +70,32 @@ namespace translate
 
         }
 
-        private void tRaNsLaToR_Click(object sender, EventArgs e)
+        private async void tRaNsLaToR_Click(object sender, EventArgs e)
         {
-            string url = "https://translate.google.com/?hl=ru&sl=auto&tl=ru&text=&op=translate";
-            url = "https://translate.google.com/?hl=ru&sl=auto&tl=ru&text=" + tBtRaNs.Text + "&op=translate";
-            WebRequest request = WebRequest.Create(url);
-            WebResponse response = request.GetResponse();
-            Stream resStream = response.GetResponseStream();
-            using (Stream stream = response.GetResponseStream())
-            {
-                using (StreamReader reader = new StreamReader(stream))
-                {
-                    tBtRan.Text = reader.ReadToEnd();
-                }
-            }
-            response.Close();
-            //tBtRan.Text = url;
+            var btn = sender as Button;
+            btn.Enabled = false;
+            var res = await Translate.TranslateText(tBtRaNs.Text, (lang)comboBox1.SelectedValue, (lang)translatebox.SelectedValue);
+            tBtRan.Text = res.ToString();
+            tBtRan.AppendText("\n" + JsonConvert.DeserializeObject(res.Response));
+            btn.Enabled = true;
+        }
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            var lst = Translate.GetLangusges().ToList();
+            comboBox1.DisplayMember = "Value";
+            comboBox1.ValueMember = "Key";
+            comboBox1.DataSource = lst;
+
+            translatebox.DisplayMember = "Value";
+            translatebox.ValueMember = "Key";
+            translatebox.DataSource = lst.ToList();
+
+            comboBox1.SelectedValue = lang.en;
+            translatebox.SelectedValue = lang.ru;
+        }
+        private void comboBox1__TextChanged_1(object sender, EventArgs e)
+        {
+            index = comboBox1.FindString(comboBox1.Text);//нахождение индекса 1-го совпадения с вводимым значением
         }
     }
 }
