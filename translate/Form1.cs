@@ -10,14 +10,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using GoogleTranslateLib;
-
+using GoogleTranslateFreeApi;
 using Newtonsoft.Json;
 
 namespace translate
 {
     public partial class Form1 : Form
     {
+        int pos;
         int index;
+        string text, txtfilt;
         //Translate GoogleAPI;
         public Form1()
         {
@@ -46,7 +48,7 @@ namespace translate
             // читаем файл в строку
             string fileText = System.IO.File.ReadAllText(filename);
             tBtRaNs.Text = fileText;
-            MessageBox.Show("Файл открыт");
+            
         }
 
         private void сохранитьToolStripMenuItem_Click(object sender, EventArgs e)
@@ -57,7 +59,7 @@ namespace translate
             string filename = saveFileDialog1.FileName;
             // сохраняем текст в файл
             System.IO.File.WriteAllText(filename, tBtRan.Text);
-            MessageBox.Show("Файл сохранен");
+            
         }
 
         private void выходToolStripMenuItem_Click(object sender, EventArgs e)
@@ -72,12 +74,23 @@ namespace translate
 
         private async void tRaNsLaToR_Click(object sender, EventArgs e)
         {
-            var btn = sender as Button;
-            btn.Enabled = false;
-            var res = await Translate.TranslateText(tBtRaNs.Text, (lang)comboBox1.SelectedValue, (lang)translatebox.SelectedValue);
-            tBtRan.Text = res.ToString();
-            tBtRan.AppendText("\n" + JsonConvert.DeserializeObject(res.Response));
-            btn.Enabled = true;
+            try
+            {
+                var btn = sender as Button;
+                btn.Enabled = false;
+                var res = await Translate.TranslateText(tBtRaNs.Text, (lang)comboBox1.SelectedValue, (lang)translatebox.SelectedValue);
+                tBtRan.Text = "";//res.ToString();
+                Object json = JsonConvert.DeserializeObject(res.Response);
+                foreach(dynamic sent in res.Result.sentences) {
+                    tBtRan.AppendText("\n" + sent.trans);
+                }
+                //tBtRan.AppendText("\n" + res.Result.sentences[0].trans+"\n"+ res.Result.sentences.Count());
+                btn.Enabled = true;
+            }
+            catch
+            {
+                MessageBox.Show("Ошибка");
+            }
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -97,5 +110,11 @@ namespace translate
         {
             index = comboBox1.FindString(comboBox1.Text);//нахождение индекса 1-го совпадения с вводимым значением
         }
+        /*Google.Cloud.Translation.V2
+        Google.Apis.Translate.v2 может установиться сразу автоматически после Google.Cloud.Translation.V2, если же не установиться автоматически, то нужно будет установить в ручную
+        Возможно разберешься как работать TranslatorService
+        Yandex.Translator 
+        YandexLinguistics.NET тут больше возможностей чем в предыдущей
+        */
     }
 }

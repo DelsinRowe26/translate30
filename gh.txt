@@ -1,0 +1,351 @@
+My summer vacations this year were interesting and memorable.: Мои летние каникулы в этом году были интересными и запоминающимися. , Every day was filled with events.
+
+: Каждый день был наполнен событиями.
+
+, In June, together with classmates, we went to a camp.: В июне вместе с одноклассниками поехали в лагерь. , I liked the camp very much.: Лагерь мне очень понравился. , We played sports games, competed in various sports, took part in various competitions.: Мы играли в спортивные игры, соревновались в разных видах спорта, участвовали в различных соревнованиях. , In the evenings, we went to the disco.: По вечерам ходили на дискотеку. , I enjoyed discos as I like music and dancing.: Мне нравились дискотеки, так как я люблю музыку и танцы. , I made a lot of new friends and got to know my classmates better than at school.
+
+: Я завела много новых друзей и познакомилась с одноклассниками лучше, чем в школе.
+
+, When I returned home after the camp, together with my parents we went to the Crimea to have a rest by the sea.: Когда я вернулся домой после лагеря, мы с родителями поехали в Крым отдыхать у моря. , We stayed in a nice hotel in Feodosia.: Остановились в хорошем отеле в Феодосии. , I really liked the stony beaches, blue sea, and numerous excursions.: Очень понравились каменистые пляжи, синее море и многочисленные экскурсии. , Mom and Dad allowed me to scuba dive and I saw the life of the seabed.: Мама и папа разрешили мне нырять с аквалангом, и я увидел жизнь на морском дне. , I also visited the water park, made trips on a motor ship, and rode horses.: Еще я ходил в аквапарк, совершал прогулки на теплоходе, катался на лошадях. , My rest by the sea was unforgettable.
+
+: Отдых у моря был незабываемым.
+
+, In August, I went to the country to visit my grandparents.: В августе я поехал за город навестить бабушку и дедушку. , I have many friends in the village where my grandparents live and we spent time together.: У меня много друзей в деревне, где живут мои бабушка и дедушка, и мы вместе проводили время. , We went swimming and fishing.
+
+: Ходили купаться и ловить рыбу.
+
+, My summer holidays fly surprisingly fast.: Мои летние каникулы проходят на удивление быстро. , Now the school year has just begun, but I'm already waiting for new vacations, new impressions and new friends.: Сейчас учебный год только начался, а я уже жду новых каникул, новых впечатлений и новых друзей.
+{
+  "sentences": [
+    {
+      "trans": "Мои летние каникулы в этом году были интересными и запоминающимися. ",
+      "orig": "My summer vacations this year were interesting and memorable.",
+      "backend": 3,
+      "model_specification": [
+        {}
+      ],
+      "translation_engine_debug_info": [
+        {
+          "model_tracking": {
+            "checkpoint_md5": "cce7c67b3f2439089dd6b428e0b83b88",
+            "launch_doc": "en_ru_2020q2.md"
+          }
+        }
+      ]
+    },
+    {
+      "trans": "Каждый день был наполнен событиями.\r\n\r\n",
+      "orig": "Every day was filled with events.\r\n\r\n",
+      "backend": 3,
+      "model_specification": [
+        {}
+      ],
+      "translation_engine_debug_info": [
+        {
+          "model_tracking": {
+            "checkpoint_md5": "cce7c67b3f2439089dd6b428e0b83b88",
+            "launch_doc": "en_ru_2020q2.md"
+          }
+        },
+        {
+          "has_untranslatable_chunk": true
+        }
+      ]
+    },
+    {
+      "trans": "В июне вместе с одноклассниками поехали в лагерь. ",
+      "orig": "In June, together with classmates, we went to a camp.",
+      "backend": 3,
+      "model_specification": [
+        {}
+      ],
+      "translation_engine_debug_info": [
+        {
+          "model_tracking": {
+            "checkpoint_md5": "cce7c67b3f2439089dd6b428e0b83b88",
+            "launch_doc": "en_ru_2020q2.md"
+          }
+        }
+      ]
+    },
+    {
+      "trans": "Лагерь мне очень понравился. ",
+      "orig": "I liked the camp very much.",
+      "backend": 3,
+      "model_specification": [
+        {}
+      ],
+      "translation_engine_debug_info": [
+        {
+          "model_tracking": {
+            "checkpoint_md5": "cce7c67b3f2439089dd6b428e0b83b88",
+            "launch_doc": "en_ru_2020q2.md"
+          }
+        }
+      ]
+    },
+    {
+      "trans": "Мы играли в спортивные игры, соревновались в разных видах спорта, участвовали в различных соревнованиях. ",
+      "orig": "We played sports games, competed in various sports, took part in various competitions.",
+      "backend": 3,
+      "model_specification": [
+        {}
+      ],
+      "translation_engine_debug_info": [
+        {
+          "model_tracking": {
+            "checkpoint_md5": "cce7c67b3f2439089dd6b428e0b83b88",
+            "launch_doc": "en_ru_2020q2.md"
+          }
+        }
+      ]
+    },
+    {
+      "trans": "По вечерам ходили на дискотеку. ",
+      "orig": "In the evenings, we went to the disco.",
+      "backend": 3,
+      "model_specification": [
+        {}
+      ],
+      "translation_engine_debug_info": [
+        {
+          "model_tracking": {
+            "checkpoint_md5": "cce7c67b3f2439089dd6b428e0b83b88",
+            "launch_doc": "en_ru_2020q2.md"
+          }
+        }
+      ]
+    },
+    {
+      "trans": "Мне нравились дискотеки, так как я люблю музыку и танцы. ",
+      "orig": "I enjoyed discos as I like music and dancing.",
+      "backend": 3,
+      "model_specification": [
+        {}
+      ],
+      "translation_engine_debug_info": [
+        {
+          "model_tracking": {
+            "checkpoint_md5": "cce7c67b3f2439089dd6b428e0b83b88",
+            "launch_doc": "en_ru_2020q2.md"
+          }
+        }
+      ]
+    },
+    {
+      "trans": "Я завела много новых друзей и познакомилась с одноклассниками лучше, чем в школе.\r\n\r\n",
+      "orig": "I made a lot of new friends and got to know my classmates better than at school.\r\n\r\n",
+      "backend": 3,
+      "model_specification": [
+        {}
+      ],
+      "translation_engine_debug_info": [
+        {
+          "model_tracking": {
+            "checkpoint_md5": "cce7c67b3f2439089dd6b428e0b83b88",
+            "launch_doc": "en_ru_2020q2.md"
+          }
+        },
+        {
+          "has_untranslatable_chunk": true
+        }
+      ]
+    },
+    {
+      "trans": "Когда я вернулся домой после лагеря, мы с родителями поехали в Крым отдыхать у моря. ",
+      "orig": "When I returned home after the camp, together with my parents we went to the Crimea to have a rest by the sea.",
+      "backend": 3,
+      "model_specification": [
+        {}
+      ],
+      "translation_engine_debug_info": [
+        {
+          "model_tracking": {
+            "checkpoint_md5": "cce7c67b3f2439089dd6b428e0b83b88",
+            "launch_doc": "en_ru_2020q2.md"
+          }
+        }
+      ]
+    },
+    {
+      "trans": "Остановились в хорошем отеле в Феодосии. ",
+      "orig": "We stayed in a nice hotel in Feodosia.",
+      "backend": 3,
+      "model_specification": [
+        {}
+      ],
+      "translation_engine_debug_info": [
+        {
+          "model_tracking": {
+            "checkpoint_md5": "cce7c67b3f2439089dd6b428e0b83b88",
+            "launch_doc": "en_ru_2020q2.md"
+          }
+        }
+      ]
+    },
+    {
+      "trans": "Очень понравились каменистые пляжи, синее море и многочисленные экскурсии. ",
+      "orig": "I really liked the stony beaches, blue sea, and numerous excursions.",
+      "backend": 3,
+      "model_specification": [
+        {}
+      ],
+      "translation_engine_debug_info": [
+        {
+          "model_tracking": {
+            "checkpoint_md5": "cce7c67b3f2439089dd6b428e0b83b88",
+            "launch_doc": "en_ru_2020q2.md"
+          }
+        }
+      ]
+    },
+    {
+      "trans": "Мама и папа разрешили мне нырять с аквалангом, и я увидел жизнь на морском дне. ",
+      "orig": "Mom and Dad allowed me to scuba dive and I saw the life of the seabed.",
+      "backend": 3,
+      "model_specification": [
+        {}
+      ],
+      "translation_engine_debug_info": [
+        {
+          "model_tracking": {
+            "checkpoint_md5": "cce7c67b3f2439089dd6b428e0b83b88",
+            "launch_doc": "en_ru_2020q2.md"
+          }
+        }
+      ]
+    },
+    {
+      "trans": "Еще я ходил в аквапарк, совершал прогулки на теплоходе, катался на лошадях. ",
+      "orig": "I also visited the water park, made trips on a motor ship, and rode horses.",
+      "backend": 3,
+      "model_specification": [
+        {}
+      ],
+      "translation_engine_debug_info": [
+        {
+          "model_tracking": {
+            "checkpoint_md5": "cce7c67b3f2439089dd6b428e0b83b88",
+            "launch_doc": "en_ru_2020q2.md"
+          }
+        }
+      ]
+    },
+    {
+      "trans": "Отдых у моря был незабываемым.\r\n\r\n",
+      "orig": "My rest by the sea was unforgettable.\r\n\r\n",
+      "backend": 3,
+      "model_specification": [
+        {}
+      ],
+      "translation_engine_debug_info": [
+        {
+          "model_tracking": {
+            "checkpoint_md5": "cce7c67b3f2439089dd6b428e0b83b88",
+            "launch_doc": "en_ru_2020q2.md"
+          }
+        },
+        {
+          "has_untranslatable_chunk": true
+        }
+      ]
+    },
+    {
+      "trans": "В августе я поехал за город навестить бабушку и дедушку. ",
+      "orig": "In August, I went to the country to visit my grandparents.",
+      "backend": 3,
+      "model_specification": [
+        {}
+      ],
+      "translation_engine_debug_info": [
+        {
+          "model_tracking": {
+            "checkpoint_md5": "cce7c67b3f2439089dd6b428e0b83b88",
+            "launch_doc": "en_ru_2020q2.md"
+          }
+        }
+      ]
+    },
+    {
+      "trans": "У меня много друзей в деревне, где живут мои бабушка и дедушка, и мы вместе проводили время. ",
+      "orig": "I have many friends in the village where my grandparents live and we spent time together.",
+      "backend": 3,
+      "model_specification": [
+        {}
+      ],
+      "translation_engine_debug_info": [
+        {
+          "model_tracking": {
+            "checkpoint_md5": "cce7c67b3f2439089dd6b428e0b83b88",
+            "launch_doc": "en_ru_2020q2.md"
+          }
+        }
+      ]
+    },
+    {
+      "trans": "Ходили купаться и ловить рыбу.\r\n\r\n",
+      "orig": "We went swimming and fishing.\r\n\r\n",
+      "backend": 3,
+      "model_specification": [
+        {}
+      ],
+      "translation_engine_debug_info": [
+        {
+          "model_tracking": {
+            "checkpoint_md5": "cce7c67b3f2439089dd6b428e0b83b88",
+            "launch_doc": "en_ru_2020q2.md"
+          }
+        },
+        {
+          "has_untranslatable_chunk": true
+        }
+      ]
+    },
+    {
+      "trans": "Мои летние каникулы проходят на удивление быстро. ",
+      "orig": "My summer holidays fly surprisingly fast.",
+      "backend": 3,
+      "model_specification": [
+        {}
+      ],
+      "translation_engine_debug_info": [
+        {
+          "model_tracking": {
+            "checkpoint_md5": "cce7c67b3f2439089dd6b428e0b83b88",
+            "launch_doc": "en_ru_2020q2.md"
+          }
+        }
+      ]
+    },
+    {
+      "trans": "Сейчас учебный год только начался, а я уже жду новых каникул, новых впечатлений и новых друзей.",
+      "orig": "Now the school year has just begun, but I'm already waiting for new vacations, new impressions and new friends.",
+      "backend": 3,
+      "model_specification": [
+        {}
+      ],
+      "translation_engine_debug_info": [
+        {
+          "model_tracking": {
+            "checkpoint_md5": "cce7c67b3f2439089dd6b428e0b83b88",
+            "launch_doc": "en_ru_2020q2.md"
+          }
+        }
+      ]
+    }
+  ],
+  "src": "en",
+  "confidence": 1.0,
+  "spell": {},
+  "ld_result": {
+    "srclangs": [
+      "en"
+    ],
+    "srclangs_confidences": [
+      1.0
+    ],
+    "extended_srclangs": [
+      "en"
+    ]
+  }
+}
